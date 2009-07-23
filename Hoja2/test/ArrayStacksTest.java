@@ -7,6 +7,12 @@
  * Algoritmo y estructura de datos
  */
 
+/**
+ *
+ * Se importan paquetes
+ */
+
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -14,10 +20,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author jchicas
- */
+
 public class ArrayStacksTest {
 
     public ArrayStacksTest() {
