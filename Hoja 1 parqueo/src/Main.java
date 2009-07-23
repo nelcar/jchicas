@@ -1,5 +1,7 @@
+/**
+ * Se importan paquetes necesarios para esta clase
+ */
 
-// se importan paquenes necesarios para este clase
 
 import java.util.Scanner;
 
@@ -18,7 +20,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // se declaron variables
+        /**
+         * Se declaran las variables de la clase
+         */
+
+
 
         String op;
         String placa = "";
@@ -28,14 +34,16 @@ public class Main {
         int op2;
 
 
-
         Scanner scan = new Scanner(System.in);
-        System.out.println(" Cuantos espacios desea:  ");
+        System.out.println(" \nCuantos espacios desea:  ");
         n = scan.nextInt();
 
         Stacks [] miStack = new Stacks [n];
 
-        // condicio  que recorre todos los stacks para instanciarlos
+        /**
+         * Ciclo que recorre todos los stacks para instanciarlos
+         */
+        
 
         for (int i=0; i<n; i++){
 
@@ -45,20 +53,24 @@ public class Main {
 
         Stacks miStack2 = new Stacks();
 
-        // ciclo para el menu
+        /**
+         * Ciclo para mostrar el menu repetitivo
+         */
+       
       do{
        
 
-        System.out.println("            ......:::::: Uvg::::::......          ");
-        System.out.println("Ingrese ¨ a ¨ si desea meter un  carro al parqueo");
-        System.out.println("Ingrese ¨ d ¨ si desea sacar un carro del parqueo");
+        System.out.println("  \n        ......:::::: Uvg::::::......          ");
+        System.out.println("\nIngrese ¨ a ¨ si desea meter un  carro al parqueo: ");
+        System.out.println("\nIngrese ¨ d ¨ si desea sacar un carro del parqueo: ");
         op = scan.next();
 
+        /**
+         * Switch que controla el menu de las teclas (a) y (b)
+         */
 
-
+     
         switch(op.charAt(0)){
-
-
 
             case  'a':
             {
@@ -71,7 +83,7 @@ public class Main {
                 
                 if (op1 <= n){
 
-                        System.out.println("Debe colar su carro en el espacio:  " + op1);
+                        System.out.println("Debe colocar su carro en el espacio:  " + op1);
                         op1--;
                         System.out.println("Cual es la placa de su carro: ");
                         placa = scan.next ();
@@ -87,16 +99,16 @@ public class Main {
                case  'd':
                {
 
-                 System.out.println("En que espacio desea buscar su carro:  ");
+                 System.out.println("\nEn que espacio desea buscar su carro:  ");
                  op1 = scan. nextInt();
                  op1--;
                  
-                 System.out.println("Ingrese la placa de su vehiculo:  ");
+                 System.out.println("\nIngrese la placa de su vehiculo:  ");
                  placa =scan.next ();
 
 
 
-                  System.out.println("Cual es el numero de parqueo: ");
+                  System.out.println("\nCual es el numero de parqueo: ");
 
                   boolean band=false;
 
@@ -139,7 +151,10 @@ public class Main {
 
         }
 
-        // ciclo para desplejar el estado del estacionamiento
+        /**
+         * Ciclo para desplegar el estado del estacionamiento
+         */
+        
          for(int i=0; i<n; i++){
           for(int j=0; j<miStack[i].pointer(); j++){ System.out.print( miStack[i].getVec(j)+ "  ");}
           for(int j=miStack[i].pointer(); j<10; j++ ){ System.out.print("vacio ");}
@@ -147,7 +162,7 @@ public class Main {
           System.out.println();
         }
 
-        System.out.print("Ingrese 1 para continuar y 2 para cerrar: ");
+        System.out.print("\nIngrese 1 para continuar y 2 para cerrar: ");
         scan = new Scanner(System.in);
         op2 = scan.nextInt();
       }while(op2 == 1 );

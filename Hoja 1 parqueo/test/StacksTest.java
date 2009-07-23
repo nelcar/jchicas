@@ -1,6 +1,10 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Universidad del Valle de Guatemala
+ * Autor: Julio r. Chias Sett
+ * Programa:  StacksTest.java
+ * Descripcion: Clase que posee pruebas de junit
+ * Seccion:
+ * Algoritmo y estructura de datos
  */
 
 import org.junit.After;
