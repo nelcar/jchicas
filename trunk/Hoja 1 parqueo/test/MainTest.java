@@ -1,6 +1,10 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Universidad del Valle de Guatemala
+ * Autor: Julio r. Chias sett
+ * Programa:  MainTest.java
+ * Descripcion: Clase que posee las test de junit
+ * Seccion:
+ * Algoritmo y estructura de datos
  */
 
 import org.junit.After;

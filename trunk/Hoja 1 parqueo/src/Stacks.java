@@ -3,36 +3,39 @@ import java.util.ArrayList;
 
 /*
  * Universidad del Valle de Guatemala
- * Algoritmo y Estructura de Datos
-Autor> Julio Chicas
- * Carne> 07470
+ * Autor: Julio R. Chicas Sett
+ * Programa:  Stacks.java
+ * Descripcion: Clase que contiene metodos para el control de stacks
+ * Seccion:
+ * Algoritmo y estructura de datos
  */
+
 
 public class Stacks {
 
     int sp;
-   // String[] vec;
-
-
-
    ArrayList vec = new ArrayList();
 
     public Stacks() {
 
         sp = 0;
-     
-
+    
     }
 
-
-// indica cuantos elementos posee el stacks
+    /**
+     * Indica cuantos elementos possee el stacks
+     * @return la variable sp
+     */
     public int pointer() {
 
         return sp;
     }
 
-
-// saca el ultimo elemento de stack
+    /**
+     * Metodo que saca el ultimo elemento del Stacks
+     * @return temp
+     */
+ 
     public String pop() {
 
 
@@ -50,7 +53,11 @@ public class Stacks {
 
 
 
-    // visualiza el ultimo elemento del stack
+    /**
+     *  Metodo que visualiza el ultimo elemento del stacks
+     * @return temp
+     */
+   
     public String top() {
 
 
@@ -68,7 +75,11 @@ public class Stacks {
 
 
 
-    // metodo que saca los elementos del stack
+    /**
+     * Metodo que saca los elementos del Stacks
+     * @param s
+     */
+   
     public void push(String s) {
 
         if (sp < 9) {
@@ -80,7 +91,12 @@ public class Stacks {
     }
 
 
-    // metodo que se encarga de devolver el elemnto deseado
+    /**
+     * Metodo que se encarga de devolver el elemento deseado
+     * @param i
+     * @return vec
+     */
+    
     public String getVec (int i){
 
        return (String) vec.get(i) ;
