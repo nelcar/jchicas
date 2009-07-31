@@ -7,7 +7,7 @@
  *  
  *
  */
-public class ColasConArrays<E> extends AbstractQueue{
+public class ColasConArrays<E> extends ColaAbstracta{
 
 
 
