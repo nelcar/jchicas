@@ -1,9 +1,10 @@
-public class CircularList<E>
+
+public class ListasCirculares<E>
 {
 	private Node<E> head;
 	private Node<E> tail;
 	
-	public CircularList()
+	public ListasCirculares()
 	{
 		head = tail = null;
 	}
@@ -61,7 +62,6 @@ public class CircularList<E>
 		else return head.key;
 	}
 }
-
 class Node<E>
 {
 	public E key;

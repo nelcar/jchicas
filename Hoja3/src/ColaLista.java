@@ -1,12 +1,12 @@
 
-public class ListQueue<E> extends AbstractQueue<E>
+public class ColaLista<E> extends ColaAbstracta<E>
 {
-	CircularList<E> list;
+	ListasCirculares<E> list;
 	
-	public ListQueue()
+	public ColaLista()
 	{
 		num = 0;
-		list = new CircularList<E>();
+		list = new ListasCirculares<E>();
 	}
 	
 	public E removeLast()

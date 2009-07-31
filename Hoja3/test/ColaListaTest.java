@@ -14,9 +14,9 @@ import static org.junit.Assert.*;
  *
  * @author jchicas
  */
-public class ListQueueTest {
+public class ColaListaTest {
 
-    public ListQueueTest() {
+    public ColaListaTest() {
     }
 
     @BeforeClass
@@ -41,7 +41,7 @@ public class ListQueueTest {
     @Test
     public void testRemoveLast() {
         System.out.println("removeLast");
-        ListQueue instance = new ListQueue();
+        ColaLista instance = new ColaLista();
         Object expResult = null;
         Object result = instance.removeLast();
         assertEquals(expResult, result);
@@ -55,7 +55,7 @@ public class ListQueueTest {
     @Test
     public void testPeek() {
         System.out.println("peek");
-        ListQueue instance = new ListQueue();
+        ColaLista instance = new ColaLista();
         Object expResult = null;
         Object result = instance.peek();
         assertEquals(expResult, result);
@@ -70,7 +70,7 @@ public class ListQueueTest {
     public void testAddFirst() {
         System.out.println("addFirst");
         Object q = null;
-        ListQueue instance = new ListQueue();
+        ColaLista instance = new ColaLista();
         instance.addFirst(q);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
