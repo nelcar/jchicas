@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Main {
 
 	 public static void main(String[] args) {
-             // Se  crean variables
+            
 
         int time = 0;
         int count = 1;
@@ -123,8 +123,8 @@ public class Main {
         }
 
         int promedio =  suma/50;
-        System.out.println("El tiempo total de los clientes: " + suma);
-        System.out.println("El tiempo promedio es: " + promedio);
+        System.out.println("\nEl tiempo total: " + suma);
+        System.out.println("\nEl tiempo promedio es: " + promedio);
 
     }
 }
