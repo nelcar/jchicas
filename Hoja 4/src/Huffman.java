@@ -177,7 +177,7 @@ public class Huffman {
 		for(int i=0; i<tamano; i++)
 			if(tabla[i][0]==valor ){
 
-                            System.out.println((char) valor + " - " + listaCodigos[i]);
+                           // System.out.println((char) valor + " - " + listaCodigos[i]);
                             return listaCodigos[i];
                         }
 		return null;
