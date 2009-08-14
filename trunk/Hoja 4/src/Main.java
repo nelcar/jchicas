@@ -1,9 +1,4 @@
 
-import java.util.Scanner;
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.JTree;
-import javax.swing.tree.DefaultMutableTreeNode;
 
 /*Universidad del Valle de Guatemala
  * Algoritmos y estructura de Datos
@@ -13,8 +8,10 @@ import javax.swing.tree.DefaultMutableTreeNode;
  * Programa: Main.java
  *
  */
-public class Main {
 
+
+
+public class Main {
 
     /**
      * @param args the command line arguments
@@ -36,12 +33,16 @@ public class Main {
         h.agregarElemento(new Nodo('d', 1, true));
         h.agregarElemento(new Nodo('c', 2, true));
         h.agregarElemento(new Nodo('b', 1, true));
+
         h.agregarElemento(new Nodo('a', 3, true));
         
+        
+
 
         h.ordenar();
         h.generarArbol();
-         *
+
+
         recorrer(h.raizArbol);
 
         int c = 3;*/
@@ -49,38 +50,27 @@ public class Main {
 
         Compresor c = new Compresor("newfile.txt", "newfilecom.txt");
 
-        try {
-            c.compress();
-            
-            DefaultMutableTreeNode all = new DefaultMutableTreeNode(c.miHuffman.raizArbol.letra);
-            recorrer(c.miHuffman.raizArbol, all);
-            
-            JFrame frame = new JFrame ("arbol shet");
-            frame.getContentPane().add(new JScrollPane(new JTree(all)));
-            frame.setVisible(true);
-
-
-        } catch (Exception e) {
+        try{
+        c.compress();
+        recorrer(c.miHuffman.raizArbol);
+        } catch (Exception e)
+        {
             System.out.println(e);
         }
+     
     }
 
-    public static void recorrer(Nodo h, DefaultMutableTreeNode t) {
+    public static void recorrer(Nodo h)
+    {
+        if(h.hijoIzq != null)
+            recorrer(h.hijoIzq);
+
+        System.out.println("letra: " + h.letra + "\nfrecuencia: " + h.frecuencia + "\ncodigo: " + h.codigo);
+
+        if(h.hijoDer != null)
+            recorrer(h.hijoDer);
 
 
-        if (h.hijoIzq != null) {
-
-            DefaultMutableTreeNode tn = new DefaultMutableTreeNode(h.hijoIzq.letra);
-            t.add(tn);
-            recorrer(h.hijoIzq, tn);
-        }
-
-        //System.out.println("letra: " + h.letra + "\nfrecuencia: " + h.frecuencia + "\ncodigo: " + h.codigo);
-
-        if (h.hijoDer != null) {
-            DefaultMutableTreeNode tn = new DefaultMutableTreeNode(h.hijoDer.letra);
-            t.add(tn);
-            recorrer(h.hijoDer, tn);
-        }
     }
+
 }
