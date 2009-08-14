@@ -19,35 +19,6 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        /*int var;
-
-        Scanner scan = new Scanner(System.in);
-        System.out.println(".....::::Bienvenidos::::......");
-        System.out.println(" \nIngrese un mensaje:   ");
-        var = scan.nextInt();*/
-
-        /*String coso = "abaccda";
-
-        Huffman h = new Huffman(null);
-
-        h.agregarElemento(new Nodo('d', 1, true));
-        h.agregarElemento(new Nodo('c', 2, true));
-        h.agregarElemento(new Nodo('b', 1, true));
-
-        h.agregarElemento(new Nodo('a', 3, true));
-        
-        
-
-
-        h.ordenar();
-        h.generarArbol();
-
-
-        recorrer(h.raizArbol);
-
-        int c = 3;*/
-
-
         Compresor c = new Compresor("newfile.txt", "newfilecom.txt");
 
         try{
