@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        Compresor c = new Compresor("newfile.txt", "newfilecom.txt");
+        Manejador c = new Manejador("newfile.txt", "newfilecom.txt");
 
         try{
         c.compress();

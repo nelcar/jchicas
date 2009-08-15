@@ -1,3 +1,12 @@
+/*Universidad del Valle de Guatemala
+ * Algoritmos y estructura de Datos
+ * Julio Chicas Sett
+ * Carne:07470
+ * Descripcion:* Esta clase permite manipular un archivo de entrada para generar un
+ * archivo compreso utilizando el algoritmo de huffman.
+ * Programa: Manejador.java
+ *
+ */
 
 
 import java.io.FileInputStream;
@@ -5,13 +14,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/**
- * Esta clase permite manipular un archivo de entrada para generar un
- * archivo compreso utilizando el algoritmo de huffman.
- * @author AmeRiK@nO
- *
- */
-public class Compresor {
+public class Manejador {
 
 	public Huffman miHuffman;
 	private FileInputStream lector;
@@ -27,7 +30,7 @@ public class Compresor {
 	 * @param rutaDestino es la ruta de destino
 	 */
 
-	public Compresor(String rutaOrigen, String rutaDestino){
+	public Manejador(String rutaOrigen, String rutaDestino){
 
 		this.rutaOrigen=rutaOrigen;
 		this.rutaDestino=rutaDestino;

@@ -1,11 +1,15 @@
 
-
-/**
- * Esta clase representa un elemento (Nodo) del arbol huffman
+/*Universidad del Valle de Guatemala
+ * Algoritmos y estructura de Datos
+ * Julio Chicas Sett
+ * Carne:07470
+ * Descripcion:
+ *  Esta clase representa un elemento (Nodo) del arbol huffman
  * Y tiene como atributos una letra, una frecuencia, un nodo izquierda y derecha
  * para la lista enlazada, y un nodo hijoIzq e hijoDer para los dos hijos en el arbol huffman
+ * Programa: Main.java
+ *
  */
-
 
 public class Nodo {
 
