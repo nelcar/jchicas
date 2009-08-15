@@ -1,7 +1,11 @@
 
-/**
+
+/* Universidad del Valle de Guatemala
+ * Algoritmos y estructura de Datos
+ * Julio Chicas Sett
+ * Carne:07470
  * Esta clase permite generar un arbol binario de codigos huffman.
- *
+ * Programa: Huffman.java
  *
  */
 
