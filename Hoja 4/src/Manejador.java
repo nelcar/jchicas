@@ -2,7 +2,8 @@
  * Algoritmos y estructura de Datos
  * Julio Chicas Sett
  * Carne:07470
- * Descripcion:* Esta clase permite manipular un archivo de entrada para generar un
+ * Descripcion:
+ * Esta clase permite manipular un archivo de entrada para generar un
  * archivo compreso utilizando el algoritmo de huffman.
  * Programa: Manejador.java
  *

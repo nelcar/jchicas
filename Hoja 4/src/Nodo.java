@@ -7,7 +7,7 @@
  *  Esta clase representa un elemento (Nodo) del arbol huffman
  * Y tiene como atributos una letra, una frecuencia, un nodo izquierda y derecha
  * para la lista enlazada, y un nodo hijoIzq e hijoDer para los dos hijos en el arbol huffman
- * Programa: Main.java
+ * Programa: nodo.java
  *
  */
 
